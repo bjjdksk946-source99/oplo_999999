@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -34,7 +35,15 @@ h1 { margin: 5px; }
   line-height: 1.9;
 }
 
-.emoji { font-size: 75px; }
+.product-img {
+  width: 100%;
+  max-width: 300px;
+  height: 230px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto 15px;
+}
 
 .price {
   color: #70ffb0;
@@ -74,17 +83,19 @@ h1 { margin: 5px; }
 </div>
 
 <!-- الدراقون العادي -->
-
 <div class="card">
-  <div class="emoji">🐉</div>
+  <img src="dragon.jpg"
+       class="product-img"
+       alt="صورة الدراقون العادي">
   <h2>دراقون عادي</h2>
   <p class="price">80 د.ل</p>
 </div>
 
-<!-- القرمة ثاني منتج استثناءً -->
-
+<!-- القرمة العادية -->
 <div class="card">
-  <div class="emoji">🧂</div>
+  <img src="qarma.jpg"
+       class="product-img"
+       alt="صورة القرمة العادية">
   <h2>قرمة عادية</h2>
   <p class="price">6 د.ل</p>
 </div>
