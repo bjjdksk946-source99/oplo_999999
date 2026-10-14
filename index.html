@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -51,6 +50,26 @@ h1 { margin: 5px; }
   font-weight: bold;
 }
 
+.stock {
+  display: inline-block;
+  padding: 9px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.available {
+  background: #123d27;
+  color: #39ff88;
+  border: 1px solid #39ff88;
+}
+
+.unavailable {
+  background: #451b24;
+  color: #ff5252;
+  border: 1px solid #ff5252;
+}
+
 .contact {
   display: inline-block;
   background: #25D366;
@@ -60,6 +79,21 @@ h1 { margin: 5px; }
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
+}
+
+.notice {
+  background: #35151b;
+  border: 2px solid #ff3434;
+  color: #ffffff;
+  line-height: 2;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.notice h3 {
+  color: #ff5252;
+  margin-top: 0;
 }
 </style>
 </head>
@@ -89,6 +123,7 @@ h1 { margin: 5px; }
        alt="صورة الدراقون العادي">
   <h2>دراقون عادي</h2>
   <p class="price">80 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <!-- القرمة العادية -->
@@ -98,81 +133,97 @@ h1 { margin: 5px; }
        alt="صورة القرمة العادية">
   <h2>قرمة عادية</h2>
   <p class="price">6 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>لاكاسا بو</h2>
   <p class="price">50 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>فكسيني</h2>
   <p class="price">40 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>سيربرس عادي</h2>
   <p class="price">15 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>سلستين بقي</h2>
   <p class="price">15 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>فرقرما</h2>
   <p class="price">15 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>سبوكي اند بمكن</h2>
   <p class="price">15 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>كوكي اند ملكي</h2>
   <p class="price">15 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>كبتانو موبي</h2>
   <p class="price">12 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>برقر</h2>
   <p class="price">10 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>كاش اور كرت</h2>
   <p class="price">6 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>كتشب</h2>
   <p class="price">2 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>لافادوريتو</h2>
   <p class="price">2 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>تيك تاك</h2>
   <p class="price">2 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>كيتو بات</h2>
   <p class="price">2 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <div class="card">
   <h2>تنغ تنغ</h2>
   <p class="price">2 د.ل</p>
+  <span class="stock unavailable">🔴 مش متوفر</span>
 </div>
 
 <footer style="padding:30px">
@@ -183,9 +234,20 @@ h1 { margin: 5px; }
      href="https://wa.me/218931920291"
      target="_blank"
      rel="noopener noreferrer">
-    📲 تواصل وتس مع احمد اوبلو ممنوع تتصل هلبا مرات
+    📲 تواصل وتس مع احمد oplo
   </a>
 </footer>
 
+<!-- الملاحظة في آخر الموقع -->
+<div class="notice">
+  <h3>⚠️ ملاحظة مهمة</h3>
+  <p>
+    ما ناخدش فلوس سعر الشخصية قبل ما نوفرها،
+    وممنوع حجز الشخصيات،
+    وممنوع السب والاتصال،
+    وما تتقش في أي حد إلا إذا أنا قلت «ثقة» بوضوح.
+  </p>
+</div>
+
 </body>
-</html>
+    </html>
